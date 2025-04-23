@@ -55,14 +55,14 @@ if [ "$MODE" == "frps" ]; then
 [common]
 bind_port =5244
 dashboard_port = 5426
-dashboard_user = ''
-dashboard_pwd = ''
+dashboard_user = adminn
+dashboard_pwd = Wxc.123456
 EOF
 else
   sudo tee $INSTALL_DIR/frpc.ini > /dev/null <<EOF
 [common]
-server_addr = ''
-server_port =''
+server_addr = 47.101.213.4
+server_port =5700
 
 [ssh]
 type = tcp
